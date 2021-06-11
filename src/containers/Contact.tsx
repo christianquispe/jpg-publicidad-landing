@@ -1,4 +1,16 @@
+import { useFormik } from 'formik'
+
 const Contact = () => {
+  const contactFormk = useFormik({ 
+    initialValues: {
+      email: "",
+      message: ""
+    },
+    onSubmit: (values) => {
+      console.log(values) 
+    }
+  })
+
   return (
 	  <section className="bg-white">      
 	    <div className="max-w-5xl max-w-5xl px-6 py-16 mx-auto">
@@ -7,17 +19,16 @@ const Contact = () => {
 		  Contacto
 		</h2>
 		<br/>
-		<p></p>
 	      </div>
 	      <div className="grid grid-cols-2 gap-10">
-		<form className="w-full">
+		<form onSubmit={contactFormk.handleSubmit} className="w-full">
 		  <div className="flex flex-col bg-white space-y-6">
 		    <div className="flex flex-col space-y-1">
-		      <input type="text" name="username" id="username" className="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-400 focus:shadow" placeholder="Email" />
+		      <input type="text" name="email" id="username" className="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-400 focus:shadow" placeholder="Email" onChange={contactFormk.handleChange} value={contactFormk.values.email} />
 		    </div>
 
 		    <div className="flex flex-col space-y-1">
-		     <textarea name="password" id="password" className="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-400 focus:shadow" placeholder="Escriba un mensaje o descripción" />
+		      <textarea name="message" id="password" className="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-400 focus:shadow" placeholder="Escriba un mensaje o descripción" onChange={contactFormk.handleChange} value={contactFormk.values.message} />
 		    </div>
 
 		    <div className="flex flex-col-reverse sm:flex-row sm:justify-between items-center">
