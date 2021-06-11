@@ -1,14 +1,15 @@
-export const AboutUs = () => {
+const Services = () => {
   return (
     <section className="bg-white">
       <div className="max-w-5xl px-6 py-16 mx-auto">
         <h2 className="text-3xl font-semibold text-gray-800">
-          ¿Quienes somos?
+          Servicios
         </h2>
         <p className="max-w-lg mt-4 text-gray-600">
-          Somos una empresa dedicada a la producción de viniles, gigantografías,
-          cuadros modernos, etc
-        </p>
+	  Vitae nulla euismod velpretium tellus accumsan nulla nunc
+          euismod ve semper. Vitae nulla euismod velpretium tellus
+          accumsan nulla nunc euismod ve semper.
+	</p>
         <div className="grid gap-8 mt-10 md:mt-20 md:grid-cols-2">
           <div className="flex space-x-4">
             <span>Icon</span>
@@ -43,3 +44,5 @@ export const AboutUs = () => {
     </section>
   );
 };
+
+export default Services

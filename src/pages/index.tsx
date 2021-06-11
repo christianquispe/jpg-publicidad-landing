@@ -1,6 +1,7 @@
 import Head from "next/head";
-import { CallToAction, AboutUs } from "../containers/Home";
-import { Contact } from "../containers/Home/Contact";
+
+import { AboutUs, CallToAction, Contact, Location, Services } from '../containers'
+
 import Layout from "../Layout";
 
 const Home = () => {
@@ -12,8 +13,10 @@ const Home = () => {
       <Layout width="full">
         <CallToAction />
         <AboutUs />
+        <Services />
+        <Location />
         <Contact />
-        <footer className="flex items-center justify-center w-full h-12 border-t">
+        <footer className="bg-gray-800 text-white flex items-center justify-center w-full h-12 border-t">
           <p>Derechos de autor reservados a @Christian</p>
         </footer>
       </Layout>

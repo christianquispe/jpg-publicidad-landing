@@ -1,7 +1,7 @@
 import Link from "next/link";
-import {Button} from "../../../components/Button";
+import { Button } from "../components/Button";
 
-export const CallToAction = () => {
+const CallToAction = () => {
   return (
     <section className="w-full bg-gray-800">
       <div
@@ -28,3 +28,5 @@ export const CallToAction = () => {
     </section>
   );
 };
+
+export default CallToAction
