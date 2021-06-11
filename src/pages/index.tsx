@@ -3,12 +3,14 @@ import Head from "next/head";
 import { AboutUs, CallToAction, Contact, Location, Services } from '../containers'
 
 import Layout from "../Layout";
+import Footer from "../Layout/Footer";
 
 const Home = () => {
   return (
     <>
       <Head>
         <title>JPG Publicidad</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous"/>
       </Head>
       <Layout width="full">
         <CallToAction />
@@ -16,9 +18,6 @@ const Home = () => {
         <Services />
         <Location />
         <Contact />
-        <footer className="bg-gray-800 text-white flex items-center justify-center w-full h-12 border-t">
-          <p>Derechos de autor reservados a @Christian</p>
-        </footer>
       </Layout>
     </>
   );
