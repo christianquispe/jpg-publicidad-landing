@@ -5,7 +5,7 @@ const CallToAction = () => {
   return (
     <section className="w-full bg-gray-800">
       <div
-        className="max-w-6xl mr-auto ml-auto flex items-center justify-center"
+        className="max-w-6xl mr-auto ml-auto flex items-center justify-center px-4"
         style={{ height: "500px" }}
       >
         <div>

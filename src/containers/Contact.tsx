@@ -20,7 +20,7 @@ const Contact = () => {
 		</h2>
 		<br/>
 	      </div>
-	      <div className="grid grid-cols-2 gap-10">
+	      <div className="grid md:grid-cols-2 gap-10">
 		<form onSubmit={contactFormk.handleSubmit} className="w-full">
 		  <div className="flex flex-col bg-white space-y-6">
 		    <div className="flex flex-col space-y-1">
